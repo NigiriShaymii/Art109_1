@@ -62,7 +62,7 @@ color:white;
 
 h2 {
   color: white;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 p {
@@ -78,7 +78,7 @@ color: black;
 }
 
 #icon {
-
+  padding: 30px;
 }
 
 .button {
@@ -111,8 +111,7 @@ text-align: center;
 }
 
 .a1, .a2 {
-    background-image: url("media/bub.jpg");
-    background-color: black;
+    background-color: rgb(16, 25, 74);
     padding: 40px;
 }
 
