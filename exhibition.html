@@ -51,33 +51,5 @@
 <a href="https://www.youtube.com/watch?v=FukcZF9ARy8"> <img class="co" src="media/co.jpg"> </a>
 		</div>
 
-		<audio id="chirp" loop>
-				<source src="sound/under.wav" type="audio/mpeg">
-		</audio>
-		<script>
-
-		let audioStart = false;
-
-function setup() {
-	noCanvas();
-}
-
-function mousePressed() {
-	let snd = new Audio("sound/under.wav");
-	var sound = new AudioContext;
-
-	if(!audioStart) {
-		getAudioContext().resume();
-		snd.play();
-		snd.loop = true;
-		snd.volume = 0.2;
-		console.log("audio on");
-		console.log(snd.loop);
-		audioStart = true;
-		console.log("playing");
-	}
-}
-</script>
-
 	</body>
 </html>

@@ -64,36 +64,6 @@
 
 			</div>
 
-		<audio id="chirp" loop>
-				<source src="sound/birb.mp3" type="audio/mpeg">
-		</audio>
-
-		<script>
-
-		let audioStart = false;
-
-function setup() {
-	noCanvas();
-
-}
-
-function mousePressed() {
-  let snd = new Audio("sound/birb.mp3");
-	var sound = new AudioContext;
-
-	if(!audioStart) {
-		getAudioContext().resume();
-		snd.play();
-		snd.loop = true;
-		snd.volume = 0.2;
-		console.log("audio on");
-		console.log(snd.loop);
-		audioStart = true;
-		console.log("playing");
-	}
-}
-</script>
-
 		</section>
 	</body>
 </html>
